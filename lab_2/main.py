@@ -12,7 +12,7 @@ if (x >= -5) and (x < -3):
     y = y_1
 elif (x >= -3) and (x < -1):
     # чтобы не выводил -0
-    if abs(int(y_2)) == 0:
+    if (int(y_2)) == -0:
         y = abs(y_2)
     else:
         y = y_2

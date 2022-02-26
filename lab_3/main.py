@@ -23,7 +23,7 @@ while xt < xe:
     elif (xt >= -3) and (xt < -1):
         y_2 = -sqrt(pow(-2, 2) - pow((xt + 1), 2))
         # чтобы не выводил -0
-        if abs(int(y_2)) == 0:
+        if (int(y_2)) == -0:
             y = abs(y_2)
         else:
             y = y_2

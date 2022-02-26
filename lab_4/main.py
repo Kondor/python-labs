@@ -1,9 +1,9 @@
 from math import *
 from random import *
 
-count_positive_element = 0;
-sum_element = 0;
-element_equal_zero = 0;
+count_positive_element = 0
+sum_element = 0
+element_equal_zero = 0
 
 choose_action = int(input("Выберите цифру:\n"
                           "1. Задать элементы массива самостоятельно.\n"
@@ -41,11 +41,11 @@ for i in range(len(array_list)):
 print('\n')
 
 needIteration = True
-while (needIteration):
+while needIteration:
     needIteration = False
 
     for i in range(1, len(array_list)):
-        if abs(int(array_list[i - 1])) > 1 and abs(int(array_list[i])) <= 1:
+        if (abs(int(array_list[i - 1])) > 1) and (abs(int(array_list[i])) <= 1):
             array_list[i - 1], array_list[i] = array_list[i], array_list[i - 1]
             needIteration = True
 
